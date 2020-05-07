@@ -1,0 +1,104 @@
+:root {
+  --main-bg-color: lightgray;
+  --main-primary-color: #2c1608;
+  --main-secondary-color: gold;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-color: var(--main-primary-color);
+  width: 520px;
+  height: 720px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 5px 10px #888888;
+}
+
+.image {
+  background-image: url("../images/monalisa.jpg");
+  background-size: cover;
+  border: 2px solid var(--main-secondary-color);
+  width: calc(100% - 4px);
+  height: calc(85% - 4px);
+  position: relative;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.image:hover {
+  background-image: url("../images/monalisa2.jpg");
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 10%;
+  min-height: 100%;
+  background-color: var(--main-primary-color);
+  opacity: 0.5;
+}
+
+.description {
+  color: var(--main-secondary-color);
+  height: 5%;
+  width: 100%;
+  text-align: right;
+}
+
+.description span {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.name {
+  display: block;
+  background-color: var(--main-secondary-color);
+  color: var(--main-primary-color);
+  height: 10%;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: right;
+  transition: background-color 0.5s ease-out;
+}
+
+.name:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.name span {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--main-primary-color);
+}
+
+.logo {
+  background-color: var(--main-primary-color);
+  border: 2px solid var(--main-secondary-color);
+  height: 15%;
+  width: 15%;
+  position: absolute;
+  bottom: 5%;
+  left: 6%;
+}
+
+.logo img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}

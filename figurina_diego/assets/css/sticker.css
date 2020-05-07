@@ -1,0 +1,50 @@
+body {
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: #2C1608;
+    width: 320px;
+    height: 430px;
+    padding: 10px;
+}
+
+.image {
+    background-image: url('../images/monalisa.jpg');
+    background-size: cover;
+    border: 2px solid gold;
+    height: calc(85% - 4px); /* 358px */
+    width: calc(100% - 4px); /* 316px */
+    transition: background-image 0.3s ease-in-out;
+}
+
+.image:hover {
+    background-image: url('../images/monalisa2.jpg');
+}
+
+.description {
+    background-color: transparent;
+    color: gold;
+    font-weight: bold;
+    text-align: right;
+    height: 5%; /* 22px */
+    width: 100%; /* 320px */
+}
+
+.name {
+    background-color: gold;
+    color: #2C1608;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    height: 10%; /* 42px */
+    width: 100%; /* 320px */
+    position: relative;
+}
+
+.name > span {
+    position: absolute;
+    top: calc(50% - 9px); /* 33px */
+    right: 20px;
+}

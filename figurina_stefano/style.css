@@ -1,0 +1,55 @@
+        
+        .paco {
+                text-align: center; 
+                display: block; 
+                background-color: tomato;
+                border: 2px solid black; 
+                width: 370px; 
+                height: 353px;}
+        
+        img {
+                text-align: center; 
+                width: 350px; 
+                border: black 2px solid; 
+                margin-top: 0px; 
+                margin-bottom: 0px; 
+                margin-right: 30px; 
+                margin-left: 0px;}
+        
+        .paco1 {
+                text-align: center; 
+                display: block;
+                background-color: teal;
+                width: 370px;
+                height: 56px;
+                margin-top: 0;
+                border: black solid 2px;}
+        
+        .paco2 {
+                text-align: center; 
+                display: block;
+                background-color: violet;
+                width: 410px;
+                height: 418px;
+                }
+        
+        body {
+                margin: 300px; 
+                padding: 0; 
+                border: 0; 
+                outline: 0; 
+                margin-top: 0; 
+                margin-bottom: 0;
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;}
+        
+        .contenitore {display: flex;
+
+        }       
+        .material-icons{
+                position: absolute; 
+                left: 330px; 
+                bottom: 360px;}
+               
+       
+        
